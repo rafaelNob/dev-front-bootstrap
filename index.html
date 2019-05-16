@@ -1,16 +1,79 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>One Page</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    
 
+<body>
+    <div class="container-fluid bg-topo">
+        <header class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a href="#" class="navbar-brand">
+                    <img src="img/logo.png" height="70" class="d-inline-block align-top">
+                </a>
+                <button class="navbar-toggler" type="button" data-target="#menu" aria-controls="menu"
+                    aria-expanded="false" area-label="Menu Colapso">
+                    <span class="navbar-toggler-icon text-light"></span>
+                </button>
+                <div>
+                    <div id="menu" class="collapse navbar-collapse">
+                        <ul class="navbar-nav mr-auto text-light">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-light font-weight-bold">Serviços</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-light font-weight-bold">Parceiros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-light font-weight-bold">Cursos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-light font-weight-bold">Contatos</a>
+                            </li>
+                        </ul>
+                        <a href="#" class="btn btn-orcamento">Pedir um orçamento</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <!-- SLIDESHOW -->
+    <div class="container-fluid my-2">
+        <div id="slideshow" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#slide-show" data-slide-to="0" class="active"></li>
+                <li data-target="#slide-show" data-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a href="#">
+                        <img src="img/banner1.jpg" class="d-block w-100" alt="Primeiro Slide">
+                    </a>
+                </div>
+                <div class="carousel-item ">
+                    <a href="#">
+                        <img src="img/banner2.jpg" class="d-block w-100" alt="Primeiro Slide">
+                    </a>
+                </div>
+                <a href="#slideshow" class="carousel-control-prev" role="button" data-slide="prev">
+                    <span class="carousel-control-next-icon" area-hidden="true"></span>
+                    <span class="sr-only" area-hidden="true">Anterior</span>
+                </a>
+                <a href="#slideshow" class="carousel-control-prev" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" area-hidden="true"></span>
+                        <span class="sr-only" area-hidden="true">Próximo</span>
+                    </a>
+            </div>
+        </div>
+    </div>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.min.js"></script>
 </body>
+
 </html>
